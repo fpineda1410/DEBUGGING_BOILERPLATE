@@ -6,16 +6,11 @@ import { Link } from "react-router-dom";
 
 let temporal_list = [];
 let temporal_list_planets = [];
+
+
 function Components() {
   const { store, actions } = useContext(Context);
-  //const [boolean, setBoolean] = useState(false)
-  const [protagonist_list, setList] = useState([]);
-  const [planet_list, setPlanets] = useState([]);
-  const [properties_list, setProperties] = useState([]);
-  const [planets_props, setPlanetsProps] = useState([]);
-  const [boolean, setBoolean] = useState(false);
-  const [boolean_planets, setBooleanPlanets] = useState(false);
-
+  
   const buttonLabel = {
     learn: "Learn More",
     favorites: "❤",
@@ -204,7 +199,7 @@ function Components() {
           <div className="d-flex flex-row flex-nowrap">
             <CardGeneratorPlanets
               list={store.planet_list}
-              property_list={properties_list}
+              
             />
           </div>
         </div>

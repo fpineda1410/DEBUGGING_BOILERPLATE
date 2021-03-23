@@ -15,7 +15,7 @@ const Layout = () => {
         <Route exact path="/">
           <Components />
         </Route>
-		<Route exact path="/detail/:indicator">
+		  <Route exact path="/detail/:indicator">
           <Detail_Page />
         </Route>
       </Switch>
